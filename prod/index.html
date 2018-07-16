@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang= "en">
+
+<head>
+	
+<meta charset = "UTF-8">
+<title>Movie App</title>
+
+<link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/cyborg/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="finalStyle.min.css">
+
+</head>
+<body>
+	 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	  <a class="navbar-brand" href="#">Movie Database </a>
+
+	</nav>
+
+	<div class="container" style = "padding-top: 50px;">
+		<div class="jumbotron">
+			<h3 class="text-center">Search for movie</h3>
+			<form id="searchForm" >
+				<input type = "text" class = "form-control form-inline " id = "userInput" placeholder = "Type movie name in english..."> 
+			<button class="btn btn-primary my-2 my-sm-0 btn-block" type="submit">Search</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- API loaded content -->
+	<div class="container">
+		<div id="movies" class = "row"></div>
+		
+	</div>
+	<!-- Modal -->
+		<div id="myModal" class="modal">
+		  <!-- Modal content -->
+		  <div class="modal-content">
+		    	<span class="close">&times;</span>
+		    	<div class="container">
+					<div id="movies2" class = "well"></div>
+				</div>
+		  </div>
+		</div>	
+
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+ <script src = "finalScript.min.js"></script>
+</body>
+
+
+</html>
+
